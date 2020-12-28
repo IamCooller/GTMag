@@ -2,14 +2,16 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link media="all" rel="stylesheet" href="style.css" />
 		<link media="all" rel="stylesheet" href="css/adaptive.css" />
 		<script src="js/jquery-2.2.4.min.js"></script>
 		
 	</head>
 	<body>
+
 	
+
 		<div class="block top">
 			<div class="center">
 				<div class="flex">
@@ -43,6 +45,46 @@
 					<div class="logo">
 						<a href="">Название сайта - описание</a>
 					</div>
+					<div class="block mobile">	<nav class="mobile-menu" role="navigation">
+						<div id="menuToggle">
+						  <input type="checkbox" />
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <ul id="menu">
+							<li><a href="">О нас</a></li>
+							<li><a href="">Каталог</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Статьи</a></li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Контакты</a></li>
+				<hr>
+							<div class="flex mobile-menu-additional">
+								<div class="region">
+									<p>Ваш регион: Москва</p>
+								</div>
+								<div class="menu">
+									<ul>
+										<li><a href="">Как заказать</a></li>
+										<li><a href="">Оптовикам</a></li>
+										<li><a href="">Оплата</a></li>
+										<li><a href="">Доставка</a></li>
+										<li><a href="">Гарантия</a></li>
+										<li><a href="">Новости</a></li>
+										<li><a href="">Вопросы и ответы</a></li>
+									</ul>
+								</div>
+								<div class="authorization">
+									<ul>
+										<li><a href="">Вход</a></li>
+										<li><a href="">Регистрация</a></li>
+									</ul>
+								</div>
+							</div>
+						  </ul>
+						</div>
+					  </nav></div>
 					<div class="search">
 						<form method="" action="">
 							<input type="text" value="" name="s" placeholder="Поиск по сайту" >
@@ -74,39 +116,7 @@
 					<li><a href="">Контакты</a></li>
 				</ul>
 				
-				<nav class="mobile-menu" role="navigation">
-					<div id="menuToggle">
-					  <!--
-					  A fake / hidden checkbox is used as click reciever,
-					  so you can use the :checked selector on it.
-					  -->
-					  <input type="checkbox" />
-					  
-					  <!--
-					  Some spans to act as a hamburger.
-					  
-					  They are acting like a real hamburger,
-					  not that McDonalds stuff.
-					  -->
-					  <span></span>
-					  <span></span>
-					  <span></span>
-					  
-					  <!--
-					  Too bad the menu has to be inside of the button
-					  but hey, it's pure CSS magic.
-					  -->
-					  <ul id="menu">
-						<li><a href="">О нас</a></li>
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Услуги</a></li>
-						<li><a href="">Полезная информация</a></li>
-						<li><a href="">Статьи</a></li>
-						<li><a href="">Отзывы</a></li>
-						<li><a href="">Контакты</a></li>
-					  </ul>
-					</div>
-				  </nav>
+			
 
 			</div>
 		</div>
@@ -138,7 +148,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="forms">
+			<div class="forms forms-main">
 				<button class="close-forms">X</button>
 				<h3>Оставить заявку</h3>
 				<p>на индивидуальный пошив</p>
@@ -374,6 +384,16 @@
 						<span><img src="images/fond.png" alt="" /></span>
 					</div>
 				</div>
+				<div class="social-mobile">
+					<div class="social">
+						<p>Мы в соцсетях</p>
+						<ul>
+							<li class="facebook"><a target="_blank" href=""></a></li>
+							<li class="vk"><a target="_blank" href=""></a></li>
+							<li class="instagram"><a target="_blank" href=""></a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		
@@ -399,5 +419,7 @@
 		<script src="js/jquery.formstyler.js"></script>
 		<script src="js/jquery.fancybox.min.js"></script>
 		<script src="js/all.js"></script>
+
+
 	</body>
 </html>

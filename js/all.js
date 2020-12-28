@@ -38,7 +38,25 @@ $(document).ready(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 7000
+		autoplaySpeed: 7000,
+		responsive: [
+			{
+			  breakpoint: 1100,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				infinite: true
+				
+			  }
+			},
+			{
+			  breakpoint: 700,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		  ]
 	});	
 	
 	setTimeout(function() {
@@ -85,10 +103,10 @@ $(document).ready(function () {
 		focusOnSelect: true
 	});	
 	$( ".forms-open" ).click(function() {
-		$(".forms").addClass('forms-active');
+		$(".forms-main").addClass('forms-active');
 	});
 	$( ".close-forms" ).click(function() {
-		$(".forms").toggleClass('forms-active');
+		$(".forms-main").toggleClass('forms-active');
 	});
 	
 });
